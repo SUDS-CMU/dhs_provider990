@@ -41,7 +41,7 @@ Given a list of Provider names:
 - 8-12: Revenue
 - 13-19: Expenses
 - 20-22: Net Assets & Fund Balances
-- see [https://apps.irs.gov/pub/epostcard/cor/251729710_202106_990_2022041119848379.pdf](990 filing) as an example
+- see this [filing](https://apps.irs.gov/pub/epostcard/cor/251729710_202106_990_2022041119848379.pdf) as an example
 
 
 
