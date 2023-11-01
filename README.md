@@ -30,9 +30,21 @@ Given a list of Provider names:
 	- example: 'curl https://projects.propublica.org/nonprofits/api/v2/search.json?c_code%5Bid%5D=3&state%5Bid%5D=PA&city%5Bid%5D=PITTSBURGH'
     - [ ] `verify_provider990()`: given EIN, verify that ProPublica has 990 filings for provider for last 3 years
         - see documentation related to "Organization Method"
+	- do they file full 990, 990 EZ, other? depends on size of organization
     - [ ] `retrieve_990fieldset()`: given EIN, tax year, and set of field names, retrieve data
 	- see documentation related to "Filing Object"
     - [ ] method to collect 990 and provider identifier data in standardized format
+
+
+**990 Fields**
+- 3-7: Activities & Governance**
+- 8-12: Revenue
+- 13-19: Expenses
+- 20-22: Net Assets & Fund Balances
+- see [https://apps.irs.gov/pub/epostcard/cor/251729710_202106_990_2022041119848379.pdf](990 filing) as an example
+
+
+
 
 
 
