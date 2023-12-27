@@ -17,6 +17,8 @@ def get_orgs(page=0):
 def extract_org_data(data):
     org_data = data["organizations"]
     org_data = list(map(lambda x: (x['name'], x['sub_name'], x['city'], x['ein']), org_data))
+    # filter for Pittsburgh orgs
+    # org_data = list(filter(lambda x: x[2] == 'Pittsburgh', org_data))
     return org_data
 
 def get_990(ein, year):

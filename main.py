@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     # ----------------------------
     # return data from first page of pro publica API request data
-    QUERY_API = False
+    QUERY_API = True
     if QUERY_API:
         data = get_orgs(page=0)
         # number of returned pages
