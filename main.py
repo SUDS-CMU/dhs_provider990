@@ -73,7 +73,7 @@ if __name__ == "__main__":
                                                       val[1]))
             else:
                 # no matches
-                f.write('{},{}, No Matches\n'.format(org[0], 
+                f.write('{},{},No Matches,,,\n'.format(org[0], 
                                                      string.capwords(org[1]).replace(',','')))
             # break
 
