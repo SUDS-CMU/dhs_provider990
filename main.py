@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     # ----------------------------
     # return data from first page of pro publica API request data
-    QUERY_API = True
+    QUERY_API = False
     if QUERY_API:
         data = get_orgs(page=0)
         # number of returned pages
@@ -51,6 +51,7 @@ if __name__ == "__main__":
 
     # for each dhs org, check if exists in propublica orgs
     with open("data/MPERContractedProvider_Updated.csv", 'w') as f:
+        f.write('MPER Provider ID,DHS Provider Name,Potential Match Org Name,City,EIN,Name Match Score\n')
         for org in dhs_orgs:
             lev_d = []
             for i, org1 in enumerate(propublica_orgs):
