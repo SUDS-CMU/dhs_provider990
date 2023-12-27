@@ -16,7 +16,7 @@ def get_orgs(page=0):
 
 def extract_org_data(data):
     org_data = data["organizations"]
-    org_data = list(map(lambda x: (x['name'], x['ein']), org_data))
+    org_data = list(map(lambda x: (x['name'], x['sub_name'], x['city'], x['ein']), org_data))
     return org_data
 
 def get_990(ein, year):
