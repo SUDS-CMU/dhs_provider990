@@ -21,6 +21,20 @@ def extract_org_data(data):
     # org_data = list(filter(lambda x: x[2] == 'Pittsburgh', org_data))
     return org_data
 
+
+def list_ein_data(ein):
+    """
+    $ curl https://projects.propublica.org/nonprofits/api/v2/organizations/142007220.json
+    """
+    base_req = 'https://projects.propublica.org/nonprofits/api/v2/organizations/{}.json'
+    payload = {'output': 'flat',
+               }    
+    # get data
+    data = requests.get(base_req.format(str(ein)))
+    # return content
+    content = json.loads(data.content.decode('utf-8'))
+    return content    
+
 def get_990(ein, year):
     """
     """
